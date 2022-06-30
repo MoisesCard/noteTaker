@@ -13,7 +13,7 @@ app.use(express.json());
 app.use('/', htmlRoutes)
 app.use('/api', apiRoutes)
 
-const PORT = process.env.PORT || 3005;
+const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
     console.log(`App is listening on port ${PORT}`)

@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { notes } = require('../../Develop/db/db.json')
 const { v4: uuidv4 } = require('uuid');
 const { createContext } = require('vm');
-const { createNote, editNote, deleteNote, findById } = require('../../lib/notes');
+const { createNote, editNote, deleteNote, findById } = require('../../Develop/lib/notes');
 const { isRegExp } = require('util');
 
 router.get('/notes', (req, res) => {
